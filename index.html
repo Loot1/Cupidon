@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Louis Sachy, louisachy@icloud.com">
+    <meta name="language" content="fr-FR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow"/>
+    <title>Louis SACHY - Love</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body>
+    <div id="borne">
+        <div style="display:flex; flex-direction:column; align-items:center;">
+            <span id="score">96%</span>
+            <div class="heart-shape"></div>
+            <form style="display:flex; align-items:center; flex-direction:column; margin-top:150px;" id="form">
+                <label>Ton prénom</label>
+                <input type="text" name="aName" id="aName"pattern="^[a-zA-Zàâäãæçéèêëîïñôöõœùûüÿ-]+$"  required>
+                <label>Son prénom</label>
+                <input type="text" name="bName" id="bName" pattern="^[a-zA-Zàâäãæçéèêëîïñôöõœùûüÿ-]+$" required>
+                <input type="submit" value="Tester" id="test">
+                <span id="credits">Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank">Louis Sachy</a> | Design concept par <a href="https://www.linkedin.com/in/fatima-ahmar-817b03155/" target="_blank">Fatima Ahmar</a></span>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1ac3dc66a2.js" crossorigin="anonymous"></script>
+    <script src="assets/js/responsive.js"></script>
+    <script src="assets/js/love.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>

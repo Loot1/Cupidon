@@ -1,0 +1,110 @@
+@font-face {
+    font-family: NiagaraEngraved;
+    src: local('NiagaraEngraved'), url(../fonts/NiagaraEngraved.ttf) format('truetype');
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(220, 20, 60, 1);
+}
+
+body {
+    overflow: hidden;
+    background: rgb(240, 128, 128);
+    margin: 0;
+    font-family: NiagaraEngraved;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+input {
+    height:45px;
+    width: 200px;
+    margin:20px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-family: NiagaraEngraved;
+    font-size: 32px;
+    color: rgba(220, 20, 60, 1);
+    text-align:center;
+    outline: none;
+}
+
+label {
+    color: rgba(220, 20, 60, 1);
+    font-size: 40px;
+}
+
+.heart-shape {
+    top:100px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: rgba(220, 20, 60, 1);
+}
+
+.heart-shape:before,
+.heart-shape:after {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(220, 20, 60, 1);
+}
+
+.heart-shape:before {
+    bottom: 0px;
+    left: -60px;
+}
+
+.heart-shape:after {
+    top: -60px;
+    right: 0px;
+}
+
+#borne {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80%;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 40px;
+    border-radius: 20px;
+    display:block;
+}
+
+#credits {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#score {
+    position:relative;
+    height: 0px;
+    top:105px;
+    color: #f5f5f5;
+    font-size: 70px;
+    z-index: 1;
+}
+
+#test {
+    width: 150px;
+    margin-top: 20px;
+    background-color: rgba(220, 20, 60, 1);
+    color: #f5f5f5;
+    font-family: NiagaraEngraved;
+    font-size: 32px;
+}
