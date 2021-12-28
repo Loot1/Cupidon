@@ -4,10 +4,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="author" content="Louis Sachy, louisachy@icloud.com">
+    <meta name="description" content="Cupidon vous permet de tester votre compatibilité amoureuse avec une personne via les prénoms."/>
     <meta name="language" content="fr-FR">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow"/>
-    <title>Louis SACHY - Love</title>
+    <meta name="subject" content="Cupidon permet de tester votre compatibilité amoureuse avec une autre personne.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupidon</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 
@@ -16,9 +19,9 @@
         <div style="display:flex; flex-direction:column; align-items:center;">
             <span id="score">96%</span>
             <div class="heart-shape"></div>
-            <form style="display:flex; align-items:center; flex-direction:column; margin-top:150px;" id="form">
+            <form id="form">
                 <label>Ton prénom</label>
-                <input type="text" name="aName" id="aName"pattern="^[a-zA-Zàâäãæçéèêëîïñôöõœùûüÿ-]+$"  required>
+                <input type="text" name="aName" id="aName"pattern="^[a-zA-Zàâäãæçéèêëîïñôöõœùûüÿ-]+$" required>
                 <label>Son prénom</label>
                 <input type="text" name="bName" id="bName" pattern="^[a-zA-Zàâäãæçéèêëîïñôöõœùûüÿ-]+$" required>
                 <input type="submit" value="Tester" id="test">
